@@ -3,8 +3,9 @@
   "displayName": "OpenCode Selection",
   "description": "Send selected code or file references from VS Code to the OpenCode terminal with a single shortcut.",
   "version": "0.1.0",
-  "publisher": "JonathanReisCom",
-  "engines": { "vscode": "^1.94.0" },
+  "publisher": "Sunstone Apps",
+  "engines": { "vscode": "^1.85.0" },
+  "icon": "icon.png",
   "categories": ["Other"],
   "keywords": ["opencode", "ai", "terminal", "selection", "context"],
   "activationEvents": ["onCommand:opencodeSelection.send"],
@@ -35,5 +36,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JonathanReisCom/opencode-selection"
+  },
+  "scripts": {
+    "test": "node src/test.js"
   }
 }

@@ -1,40 +1,15 @@
 "use strict";
 
 const vscode = require("vscode");
+const { buildReference: buildRef, sanitizeText } = require("./src/logic");
 
 const OPENCODE_TERMINAL_NAME = "opencode";
 
 function buildReference(editor) {
   const doc = editor.document;
   const wsFolder = vscode.workspace.getWorkspaceFolder(doc.uri);
-  if (!wsFolder) return null;
-
   const relPath = vscode.workspace.asRelativePath(doc.uri, false);
-  const sel = editor.selection;
-  const startLine = sel.start.line + 1;
-  const endLine = sel.end.line + 1;
-
-  let ref = "@" + relPath;
-  if (!sel.isEmpty) {
-    ref += startLine === endLine ? `#L${startLine}` : `#L${startLine}-${endLine}`;
-  }
-  return ref;
-}
-
-function sanitizeText(text) {
-  const isMultiline = text.includes("\n");
-  let safe = text
-    .replace(/\r\n/g, "\n")
-    .replace(/\t/g, "    ")
-    .replace(/\n/g, " ")
-    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "")
-    .trim();
-
-  if (isMultiline) {
-    safe = "`" + safe.replace(/`/g, "\\`") + "`";
-  }
-
-  return safe;
+  return buildRef(doc, wsFolder, relPath, editor.selection);
 }
 
 function buildPayload(editor) {

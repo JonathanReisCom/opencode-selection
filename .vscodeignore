@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+src/test/**
+node_modules/**
+.gitignore
+.gitattributes
+.gitlab-ci.yml
+.travis.yml
+.github/**
+**/*.map
+**/*.ts
+tsconfig.json
+.**/**
+*.vsix
