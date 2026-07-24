@@ -2,3 +2,5 @@ node_modules/
 *.vsix
 .vscode-test/
 dist/
+tmp/
+.DS_Store

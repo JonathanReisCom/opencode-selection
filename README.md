@@ -1,6 +1,6 @@
 # opencode-selection
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/JonathanReisCom/opencode-selection)
+[![Version](https://img.shields.io/badge/version-0.1.2-blue)](https://github.com/JonathanReisCom/opencode-selection)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![VS Code](https://img.shields.io/badge/VS%20Code-%5E1.85.0-blue?logo=visualstudiocode)](https://code.visualstudio.com)
 
@@ -8,7 +8,9 @@
 
 A lightweight VS Code extension that bridges your editor to the [OpenCode](https://opencode.ai) terminal. Select code (or place your cursor on a line), press `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux), and the context is sent to the OpenCode prompt — no copy-paste needed.
 
-Built by [Sunstone Apps](https://sunstoneapps.com).
+Built by [Sunstone Apps](https://sunstoneapps.com/?utm_source=opencode-selection&utm_medium=referral&utm_campaign=marketplace).
+
+![OpenCode Selection demo](opencode-selection.gif)
 
 ## How it works
 
@@ -60,7 +62,7 @@ Then in VS Code:
 Copy the extension folder into your VS Code extensions directory:
 
 ```bash
-cp -r . ~/.vscode/extensions/sunstoneapps.opencode-selection-0.1.0
+cp -r . ~/.vscode/extensions/sunstoneapps.opencode-selection-0.1.2
 ```
 
 Restart VS Code.
@@ -85,4 +87,4 @@ If the port is not available (e.g., the terminal was opened manually), it falls 
 
 ## License
 
-MIT — &copy; [Sunstone Apps](https://sunstoneapps.com)
+MIT — &copy; [Sunstone Apps](https://sunstoneapps.com/?utm_source=opencode-selection&utm_medium=referral&utm_campaign=marketplace)
