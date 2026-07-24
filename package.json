@@ -1,0 +1,39 @@
+{
+  "name": "opencode-selection",
+  "displayName": "OpenCode Selection",
+  "description": "Send selected code or file references from VS Code to the OpenCode terminal with a single shortcut.",
+  "version": "0.1.0",
+  "publisher": "JonathanReisCom",
+  "engines": { "vscode": "^1.94.0" },
+  "categories": ["Other"],
+  "keywords": ["opencode", "ai", "terminal", "selection", "context"],
+  "activationEvents": ["onCommand:opencodeSelection.send"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "opencodeSelection.send",
+        "title": "OpenCode Selection: Send to OpenCode"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "opencodeSelection.send",
+        "key": "ctrl+l",
+        "mac": "cmd+l",
+        "win": "ctrl+l",
+        "linux": "ctrl+l"
+      }
+    ]
+  },
+  "license": "MIT",
+  "homepage": "https://sunstoneapps.com",
+  "author": {
+    "name": "Jonathan Reis",
+    "url": "https://sunstoneapps.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonathanReisCom/opencode-selection"
+  }
+}
