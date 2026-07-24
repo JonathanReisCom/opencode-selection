@@ -33,6 +33,14 @@ The official OpenCode VS Code extension only sends file references for files ins
 
 ## Install
 
+### From the VS Code Marketplace
+
+Install directly from the [Marketplace page](https://marketplace.visualstudio.com/items?itemName=sunstoneapps.opencode-selection) or via the command line:
+
+```bash
+code --install-extension sunstoneapps.opencode-selection
+```
+
 ### From source (local development)
 
 ```bash
@@ -52,7 +60,7 @@ Then in VS Code:
 Copy the extension folder into your VS Code extensions directory:
 
 ```bash
-cp -r . ~/.vscode/extensions/JonathanReisCom.opencode-selection-0.1.0
+cp -r . ~/.vscode/extensions/sunstoneapps.opencode-selection-0.1.0
 ```
 
 Restart VS Code.
